@@ -21,15 +21,14 @@ body{
   justify-content:space-between;
   align-items:center;
 
-  padding:20px 30px;
+  padding:16px 25px;
 
   background:#16a34a;
 
-  box-shadow:0 5px 20px rgba(0,0,0,.15);
+  box-shadow:0 4px 15px rgba(0,0,0,.1);
 
   z-index:999;
 }
-
 .logo{
 
   font-size:28px;
