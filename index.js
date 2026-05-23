@@ -39,7 +39,7 @@ async function loadBengkel(){
 
         <td>${item["KETERANGAN"] || "-"}</td>
 
-        <td>${item["DI BUAT"] || "-"}</td>
+        <td>${item["ALAMAT CUTI"] || "-"}</td>
 
       </tr>
     `;
@@ -77,7 +77,7 @@ async function loadTransport(){
 
         <td>${item["KETERANGAN"] || "-"}</td>
 
-        <td>${item["DI BUAT"] || "-"}</td>
+        <td>${item["ALAMAT CUTI"] || "-"}</td>
 
       </tr>
     `;
