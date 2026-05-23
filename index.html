@@ -9,36 +9,115 @@
 </head>
 <body>
 
-  <header>
-    <section class="card">
+  <!-- LANDING PAGE -->
 
-  <h2>Data Karyawan Cuti</h2>
+  <section class="hero">
 
-  <table>
+    <div class="overlay"></div>
 
-    <thead>
-      <tr>
-        <th>NO</th>
-        <th>NAMA</th>
-        <th>NO KARYAWAN</th>
-        <th>JABATAN</th>
-        <th>CUTI DARI</th>
-        <th>CUTI SAMPAI</th>
-        <th>KETERANGAN</th>
-        <th>ALAMAT CUTI</th>
-        <th>DI BUAT</th>
-        <th>DI PAKAI</th>
-      </tr>
-    </thead>
+    <div class="hero-content">
+      <h1>Cuti BPP</h1>
+      <p>Bengkel Teknik Dan Transport</p>
 
-    <tbody id="cutiBody">
+      <a href="#dashboard" class="btn">
+        LIHAT DATA CUTI
+      </a>
+    </div>
 
-    </tbody>
+  </section>
 
-  </table>
+  <!-- DASHBOARD -->
 
-</section>
+  <section id="dashboard" class="dashboard">
+
+    <div class="box">
+      <h2>Data Bengkel Sedang Cuti</h2>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Nama</th>
+              <th>Jabatan</th>
+              <th>Cuti Dari</th>
+              <th>Sampai</th>
+            </tr>
+          </thead>
+
+          <tbody id="bengkelAktif"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="box">
+      <h2>Data Transport Sedang Cuti</h2>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Nama</th>
+              <th>Jabatan</th>
+              <th>Cuti Dari</th>
+              <th>Sampai</th>
+            </tr>
+          </thead>
+
+          <tbody id="transportAktif"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="box">
+      <h2>Semua Data Cuti</h2>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Nama</th>
+              <th>Jabatan</th>
+              <th>Keterangan</th>
+              <th>Alamat Cuti</th>
+            </tr>
+          </thead>
+
+          <tbody id="semuaCuti"></tbody>
+        </table>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- FORM CUTI -->
+
+  <section class="form-section">
+
+    <div class="form-box">
+
+      <h2>Pengajuan Cuti</h2>
+
+      <form id="cutiForm">
+
+        <input type="text" id="nama" placeholder="Nama" required>
+
+        <input type="date" id="dari" required>
+
+        <input type="date" id="sampai" required>
+
+        <textarea id="keperluan" placeholder="Keperluan" required></textarea>
+
+        <button type="submit">
+          AJUKAN CUTI
+        </button>
+
+      </form>
+
+    </div>
+
+  </section>
 
   <script src="script.js"></script>
+
 </body>
 </html>
