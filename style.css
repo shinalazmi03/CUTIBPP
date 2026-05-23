@@ -4,49 +4,152 @@
   box-sizing:border-box;
 }
 
+html{
+  scroll-behavior:smooth;
+}
+
 body{
   font-family:Arial;
-  background:#07111f;
+  background:#031226;
   color:white;
+}
+
+/* HERO */
+
+.hero{
+  height:100vh;
+  background:
+  linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.7)),
+  url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1400');
+
+  background-size:cover;
+  background-position:center;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  text-align:center;
   padding:20px;
 }
 
-header{
+.hero-content h1{
+  font-size:60px;
+  margin-bottom:10px;
+}
+
+.hero-content p{
+  font-size:20px;
   margin-bottom:30px;
 }
 
-header h1{
-  font-size:40px;
+.btn{
+  background:#00c853;
+  color:white;
+  padding:15px 30px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
 }
 
-.card{
-  background:rgba(255,255,255,0.05);
+/* DASHBOARD */
+
+.dashboard{
+  padding:30px 15px;
+}
+
+.box{
+  background:#0b1e35;
+  margin-bottom:25px;
   padding:20px;
   border-radius:20px;
+}
+
+.box h2{
+  margin-bottom:20px;
+}
+
+.table-wrap{
+  overflow-x:auto;
 }
 
 table{
   width:100%;
   border-collapse:collapse;
-  margin-top:20px;
+  min-width:700px;
 }
 
 th,td{
-  padding:15px;
-  border-bottom:1px solid rgba(255,255,255,0.1);
+  padding:14px;
+  border-bottom:1px solid rgba(255,255,255,.1);
 }
 
 th{
-  background:rgba(255,255,255,0.1);
+  background:#162b47;
 }
-.status{
+
+/* FORM */
+
+.form-section{
+  padding:30px 15px 60px;
+}
+
+.form-box{
+  background:#0b1e35;
+  padding:25px;
+  border-radius:20px;
+  max-width:700px;
+  margin:auto;
+}
+
+.form-box h2{
+  margin-bottom:20px;
+}
+
+form{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+input,
+textarea{
+  padding:15px;
+  border:none;
+  border-radius:12px;
+  font-size:16px;
+}
+
+textarea{
+  min-height:120px;
+}
+
+button{
   background:#00c853;
   color:white;
-  padding:6px 14px;
-  border-radius:20px;
-  font-size:12px;
+  border:none;
+  padding:16px;
+  border-radius:14px;
+  font-size:16px;
   font-weight:bold;
+  cursor:pointer;
 }
-.card{
-  overflow-x:auto;
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  .hero-content h1{
+    font-size:42px;
+  }
+
+  .hero-content p{
+    font-size:16px;
+  }
+
+  th,td{
+    font-size:13px;
+    padding:10px;
+  }
+
 }
