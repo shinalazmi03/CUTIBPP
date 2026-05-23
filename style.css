@@ -356,15 +356,28 @@
 
 .table-wrap{
 
-  overflow-x:auto;
+  width:100%;
+
+  overflow:hidden;
 
 }
 
 table{
 
   width:100%;
+
   border-collapse:collapse;
-  min-width:1000px;
+
+  table-layout:fixed;
+
+}
+
+th,
+td{
+
+  word-wrap:break-word;
+
+  white-space:normal;
 
 }
 
@@ -630,5 +643,25 @@ td{
 .menu a:hover{
 
   transform:translateY(-2px);
+
+}
+@media(max-width:768px){
+
+  table{
+
+    width:100%;
+
+    table-layout:auto;
+
+  }
+
+  th,
+  td{
+
+    font-size:11px;
+
+    padding:8px 6px;
+
+  }
 
 }
