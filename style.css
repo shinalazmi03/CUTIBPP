@@ -74,7 +74,7 @@ body{
 
 .hero{
 
-  min-height:40vh;
+  min-height:22vh;
 
   display:flex;
   justify-content:center;
@@ -85,26 +85,25 @@ body{
   padding:20px;
 
   background:
-  linear-gradient(rgba(22,163,74,.85),
-  rgba(22,163,74,.85)),
-  url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1400');
-
-  background-size:cover;
-  background-position:center;
+  linear-gradient(rgba(22,163,74,.92),
+  rgba(22,163,74,.92));
 
   color:white;
 }
 
 .hero-content h1{
 
-  font-size:60px;
-  margin-bottom:10px;
+  font-size:38px;
+  margin-bottom:6px;
+  font-weight:700;
+  letter-spacing:1px;
 
 }
-
 .hero-content p{
 
-  font-size:20px;
+  font-size:14px;
+  opacity:.9;
+  font-weight:400;
 
 }
 
@@ -347,5 +346,56 @@ button:hover{
     padding:10px;
 
   }
+
+}
+/* EFFECT */
+
+.box{
+
+  transition:.3s;
+
+}
+
+.box:hover{
+
+  transform:translateY(-3px);
+
+}
+
+table{
+
+  border-radius:12px;
+  overflow:hidden;
+
+}
+
+th{
+
+  font-size:13px;
+  letter-spacing:.5px;
+
+}
+
+td{
+
+  font-size:13px;
+
+}
+
+.navbar{
+
+  border-bottom:3px solid #dcfce7;
+
+}
+
+.menu a{
+
+  font-size:14px;
+
+}
+
+.menu a:hover{
+
+  transform:translateY(-2px);
 
 }
