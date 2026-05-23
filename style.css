@@ -504,58 +504,84 @@ button:hover{
 
 /* MOBILE */
 
+/* MOBILE CARD MODE */
+
 @media(max-width:768px){
 
-  body{
-    overflow-x:hidden;
+  .table-wrap{
+    overflow:visible;
   }
 
-  /* HEADER */
-
-  .top-header{
-
-    padding:18px 12px 45px;
-
-    text-align:center;
-
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr{
+    display:block;
+    width:100%;
   }
 
-  .header-content{
-
-    flex-direction:column;
-
-    justify-content:center;
-    align-items:center;
-
-    gap:8px;
-
+  thead{
+    display:none;
   }
 
-  .header-text h1{
+  tr{
 
-    font-size:22px;
+    background:white;
 
-    margin-bottom:2px;
+    margin-bottom:15px;
 
-    line-height:1.2;
+    border-radius:14px;
 
-  }
+    padding:12px;
 
-  .header-text p{
+    box-shadow:
+    0 3px 10px rgba(0,0,0,.08);
 
-    font-size:11px;
+    border:
+    1px solid #dcfce7;
 
   }
 
-  .header-badge{
+  td{
 
-    font-size:10px;
+    display:flex;
 
-    padding:7px 10px;
+    justify-content:space-between;
 
-    border-radius:8px;
+    align-items:flex-start;
+
+    gap:10px;
+
+    text-align:right;
+
+    padding:8px 0;
+
+    font-size:12px;
+
+    border-bottom:
+    1px dashed #e5e7eb;
 
   }
+
+  td:last-child{
+    border-bottom:none;
+  }
+
+  td::before{
+
+    content:attr(data-label);
+
+    font-weight:bold;
+
+    color:#16a34a;
+
+    text-align:left;
+
+  }
+
+}
 
   /* NAVBAR */
 
