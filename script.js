@@ -16,13 +16,16 @@ async function loadData() {
 
       cutiBody.innerHTML += `
         <tr>
+          <td>${item["NO"]}</td>
           <td>${item["NAMA"]}</td>
+          <td>${item["NO KARYAWAN"]}</td>
           <td>${item["JABATAN"]}</td>
-          <td>
-            <span class="status">
-              CUTI
-            </span>
-          </td>
+          <td>${item["CUTI DARI"]}</td>
+          <td>${item["CUTI SAMPAI"]}</td>
+          <td>${item["KETERANGAN"]}</td>
+          <td>${item["ALAMAT cUTI"]}</td>
+          <td>${item["DI BUAT"]}</td>
+          <td>${item["DI PAKAI"]}</td>
         </tr>
       `;
 
@@ -34,8 +37,8 @@ async function loadData() {
 
     cutiBody.innerHTML = `
       <tr>
-        <td colspan="3">
-          Gagal mengambil data
+        <td colspan="10">
+          Gagal mengambil data spreadsheet
         </td>
       </tr>
     `;
