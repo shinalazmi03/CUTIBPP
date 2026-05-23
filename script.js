@@ -10,6 +10,8 @@ document.getElementById("transportAktif");
 const semuaCuti =
 document.getElementById("semuaCuti");
 
+/* LOAD DATA */
+
 async function loadData(){
 
   try{
@@ -43,19 +45,23 @@ async function loadData(){
         </tr>
       `;
 
-      // BENGKEL
+      /* BENGKEL */
 
       if(
         jabatan.toLowerCase().includes("mek") ||
         jabatan.toLowerCase().includes("bengkel")
       ){
+
         bengkelAktif.innerHTML += rowAktif;
+
       }
 
-      // TRANSPORT
+      /* TRANSPORT */
 
       else{
+
         transportAktif.innerHTML += rowAktif;
+
       }
 
       semuaCuti.innerHTML += rowSemua;
