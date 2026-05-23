@@ -4,35 +4,22 @@
   box-sizing:border-box;
 }
 
-html{
-  scroll-behavior:smooth;
-}
-
 body{
   font-family:Arial;
   background:#061321;
   color:white;
-  overflow-x:hidden;
 }
 
 /* NAVBAR */
 
 .navbar{
-  width:100%;
-  position:fixed;
-  top:0;
-  left:0;
-
   display:flex;
   justify-content:space-between;
   align-items:center;
 
-  padding:18px 40px;
+  padding:20px 30px;
 
-  background:rgba(0,0,0,.4);
-  backdrop-filter:blur(10px);
-
-  z-index:999;
+  background:#081423;
 }
 
 .logo{
@@ -42,7 +29,7 @@ body{
 
 .menu{
   display:flex;
-  gap:25px;
+  gap:20px;
 }
 
 .menu a{
@@ -51,21 +38,10 @@ body{
   font-weight:bold;
 }
 
-.menu a:hover{
-  color:#00c853;
-}
-
 /* HERO */
 
 .hero{
   min-height:100vh;
-
-  background:
-  linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.8)),
-  url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1400');
-
-  background-size:cover;
-  background-position:center;
 
   display:flex;
   justify-content:center;
@@ -73,40 +49,30 @@ body{
 
   text-align:center;
 
-  padding:20px;
+  background:
+  linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+  url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1400');
+
+  background-size:cover;
 }
 
 .hero-content h1{
   font-size:70px;
-  margin-bottom:15px;
 }
 
 .hero-content p{
   font-size:22px;
-  margin-bottom:35px;
-}
-
-.btn{
-  background:#00c853;
-  color:white;
-
-  text-decoration:none;
-
-  padding:16px 35px;
-
-  border-radius:40px;
-
-  font-weight:bold;
+  margin-top:10px;
 }
 
 /* SECTION */
 
 .section{
-  padding:40px 15px;
+  padding:30px 15px;
 }
 
 .container{
-  max-width:1300px;
+  max-width:1200px;
   margin:auto;
 }
 
@@ -118,8 +84,6 @@ body{
   padding:25px;
 
   border-radius:20px;
-
-  margin-bottom:30px;
 }
 
 .box h2{
@@ -135,17 +99,16 @@ body{
 table{
   width:100%;
   border-collapse:collapse;
-  min-width:700px;
 }
 
 th{
-  background:#142b45;
+  background:#132b46;
   padding:15px;
   text-align:left;
 }
 
 td{
-  padding:14px;
+  padding:15px;
   border-bottom:1px solid rgba(255,255,255,.08);
 }
 
@@ -175,22 +138,19 @@ form{
 
 input,
 textarea{
-  background:#081423;
+  padding:15px;
 
   border:none;
 
-  padding:15px;
+  border-radius:10px;
 
-  border-radius:12px;
+  background:#081423;
 
   color:white;
-
-  font-size:15px;
 }
 
 textarea{
-  min-height:140px;
-  resize:none;
+  min-height:130px;
 }
 
 button{
@@ -202,9 +162,7 @@ button{
 
   padding:15px;
 
-  border-radius:12px;
-
-  font-size:16px;
+  border-radius:10px;
 
   font-weight:bold;
 
@@ -218,7 +176,6 @@ button{
   .navbar{
     flex-direction:column;
     gap:15px;
-    padding:15px;
   }
 
   .menu{
@@ -226,41 +183,12 @@ button{
     justify-content:space-around;
   }
 
-  .menu a{
-    font-size:14px;
-  }
-
-  .hero{
-    min-height:75vh;
-  }
-
   .hero-content h1{
-    font-size:42px;
+    font-size:40px;
   }
 
   .hero-content p{
     font-size:16px;
-  }
-
-  .btn{
-    display:block;
-  }
-
-  .box{
-    padding:18px;
-  }
-
-  table{
-    min-width:600px;
-  }
-
-  th,td{
-    font-size:12px;
-    padding:10px;
-  }
-
-  .form-box{
-    padding:20px;
   }
 
 }
