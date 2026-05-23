@@ -493,19 +493,66 @@ button:hover{
 
 @media(max-width:768px){
 
+  /* HEADER */
+
+  .top-header{
+
+    padding:22px 15px 55px;
+
+  }
+
+  .header-content{
+
+    flex-direction:column;
+    align-items:flex-start;
+    gap:10px;
+
+  }
+
+  .header-text h1{
+
+    font-size:26px;
+    margin-bottom:3px;
+
+  }
+
+  .header-text p{
+
+    font-size:12px;
+
+  }
+
+  .header-badge{
+
+    font-size:11px;
+
+    padding:8px 12px;
+
+    border-radius:10px;
+
+  }
+
+  /* NAVBAR */
+
   .navbar{
+
+    width:94%;
+
+    margin-top:-28px;
 
     flex-direction:column;
 
-    gap:14px;
+    gap:12px;
 
-    padding:14px;
+    padding:12px;
+
+    border-radius:16px;
 
   }
 
   .logo{
 
-    font-size:20px;
+    font-size:18px;
 
   }
 
@@ -515,7 +562,9 @@ button:hover{
 
     overflow-x:auto;
 
-    padding-bottom:5px;
+    gap:8px;
+
+    padding-bottom:4px;
 
   }
 
@@ -523,9 +572,11 @@ button:hover{
 
     white-space:nowrap;
 
-    font-size:13px;
+    font-size:12px;
 
-    padding:10px 14px;
+    padding:9px 12px;
+
+    border-radius:10px;
 
   }
 
