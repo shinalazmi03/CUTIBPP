@@ -504,80 +504,47 @@ button:hover{
 
 /* MOBILE */
 
-/* MOBILE CARD MODE */
+/* MOBILE TABLE */
 
 @media(max-width:768px){
 
   .table-wrap{
-    overflow:visible;
-  }
 
-  table,
-  thead,
-  tbody,
-  th,
-  td,
-  tr{
-    display:block;
     width:100%;
+
+    overflow-x:auto;
+
+    -webkit-overflow-scrolling:touch;
+
+    border-radius:12px;
+
   }
 
-  thead{
-    display:none;
+  table{
+
+    min-width:750px;
+
+    border-collapse:collapse;
+
   }
 
-  tr{
+  th{
 
-    background:white;
+    font-size:11px;
 
-    margin-bottom:15px;
+    padding:10px 8px;
 
-    border-radius:14px;
-
-    padding:12px;
-
-    box-shadow:
-    0 3px 10px rgba(0,0,0,.08);
-
-    border:
-    1px solid #dcfce7;
+    white-space:nowrap;
 
   }
 
   td{
 
-    display:flex;
+    font-size:11px;
 
-    justify-content:space-between;
+    padding:9px 8px;
 
-    align-items:flex-start;
-
-    gap:10px;
-
-    text-align:right;
-
-    padding:8px 0;
-
-    font-size:12px;
-
-    border-bottom:
-    1px dashed #e5e7eb;
-
-  }
-
-  td:last-child{
-    border-bottom:none;
-  }
-
-  td::before{
-
-    content:attr(data-label);
-
-    font-weight:bold;
-
-    color:#16a34a;
-
-    text-align:left;
+    white-space:nowrap;
 
   }
 
