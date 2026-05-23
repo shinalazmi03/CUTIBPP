@@ -1,123 +1,244 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0">
+
   <title>Cuti BPP</title>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+  href="style.css">
+
 </head>
+
 <body>
 
-  <!-- LANDING PAGE -->
+<!-- NAVBAR -->
 
-  <section class="hero">
+<nav class="navbar">
 
-    <div class="overlay"></div>
+  <div class="logo">
+    CUTI BPP
+  </div>
 
-    <div class="hero-content">
-      <h1>Cuti BPP</h1>
-      <p>Bengkel Teknik Dan Transport</p>
+  <div class="menu">
 
-      <a href="#dashboard" class="btn">
-        LIHAT DATA CUTI
-      </a>
-    </div>
+    <a href="#bengkel">
+      Bengkel
+    </a>
 
-  </section>
+    <a href="#transport">
+      Transport
+    </a>
 
-  <!-- DASHBOARD -->
+    <a href="#ajukan">
+      Ajukan Cuti
+    </a>
 
-  <section id="dashboard" class="dashboard">
+  </div>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <h1>
+      CUTI BPP
+    </h1>
+
+    <p>
+      Bengkel Teknik Dan Transport
+    </p>
+
+    <a href="#bengkel"
+    class="btn">
+      LIHAT DATA CUTI
+    </a>
+
+  </div>
+
+</section>
+
+<!-- BENGKEL -->
+
+<section id="bengkel"
+class="section">
+
+  <div class="container">
 
     <div class="box">
-      <h2>Data Bengkel Sedang Cuti</h2>
+
+      <h2>
+        Data Bengkel Sedang Cuti
+      </h2>
 
       <div class="table-wrap">
+
         <table>
+
           <thead>
+
             <tr>
               <th>Nama</th>
               <th>Jabatan</th>
               <th>Cuti Dari</th>
-              <th>Sampai</th>
+              <th>Cuti Sampai</th>
             </tr>
+
           </thead>
 
-          <tbody id="bengkelAktif"></tbody>
+          <tbody id="bengkelAktif">
+
+          </tbody>
+
         </table>
+
       </div>
+
     </div>
 
+  </div>
+
+</section>
+
+<!-- TRANSPORT -->
+
+<section id="transport"
+class="section">
+
+  <div class="container">
+
     <div class="box">
-      <h2>Data Transport Sedang Cuti</h2>
+
+      <h2>
+        Data Transport Sedang Cuti
+      </h2>
 
       <div class="table-wrap">
+
         <table>
+
           <thead>
+
             <tr>
               <th>Nama</th>
               <th>Jabatan</th>
               <th>Cuti Dari</th>
-              <th>Sampai</th>
+              <th>Cuti Sampai</th>
             </tr>
+
           </thead>
 
-          <tbody id="transportAktif"></tbody>
+          <tbody id="transportAktif">
+
+          </tbody>
+
         </table>
+
       </div>
+
     </div>
 
+  </div>
+
+</section>
+
+<!-- SEMUA CUTI -->
+
+<section class="section">
+
+  <div class="container">
+
     <div class="box">
-      <h2>Semua Data Cuti</h2>
+
+      <h2>
+        Semua Riwayat Cuti
+      </h2>
 
       <div class="table-wrap">
+
         <table>
+
           <thead>
+
             <tr>
               <th>Nama</th>
               <th>Jabatan</th>
               <th>Keterangan</th>
               <th>Alamat Cuti</th>
             </tr>
+
           </thead>
 
-          <tbody id="semuaCuti"></tbody>
+          <tbody id="semuaCuti">
+
+          </tbody>
+
         </table>
+
       </div>
+
     </div>
 
-  </section>
+  </div>
 
-  <!-- FORM CUTI -->
+</section>
 
-  <section class="form-section">
+<!-- FORM -->
+
+<section id="ajukan"
+class="section">
+
+  <div class="container">
 
     <div class="form-box">
 
-      <h2>Pengajuan Cuti</h2>
+      <h2>
+        Ajukan Cuti
+      </h2>
 
       <form id="cutiForm">
 
-        <input type="text" id="nama" placeholder="Nama" required>
+        <input
+        type="text"
+        id="nama"
+        placeholder="Nama"
+        required>
 
-        <input type="date" id="dari" required>
+        <input
+        type="date"
+        id="dari"
+        required>
 
-        <input type="date" id="sampai" required>
+        <input
+        type="date"
+        id="sampai"
+        required>
 
-        <textarea id="keperluan" placeholder="Keperluan" required></textarea>
+        <textarea
+        id="keperluan"
+        placeholder="Keperluan"
+        required></textarea>
 
         <button type="submit">
-          AJUKAN CUTI
+          Kirim Pengajuan
         </button>
 
       </form>
 
     </div>
 
-  </section>
+  </div>
 
-  <script src="script.js"></script>
+</section>
+
+<script src="script.js"></script>
 
 </body>
 </html>
