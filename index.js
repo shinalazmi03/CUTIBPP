@@ -25,24 +25,38 @@ async function loadBengkel(){
   data.forEach(item => {
 
     bengkelBody.innerHTML += `
-      <tr>
+<tr>
 
-        <td>${item["NO"] || "-"}</td>
+<td data-label="NO">
+${item["NO"] || "-"}
+</td>
 
-        <td>${item["NAMA"] || "-"}</td>
+<td data-label="NAMA">
+${item["NAMA"] || "-"}
+</td>
 
-        <td>${item["NO KARYAWAN"] || "-"}</td>
+<td data-label="NO KARYAWAN">
+${item["NO KARYAWAN"] || "-"}
+</td>
 
-        <td>${item["CUTI DARI"] || "-"}</td>
+<td data-label="CUTI DARI">
+${item["CUTI DARI"] || "-"}
+</td>
 
-        <td>${item["CUTI SAMPAI"] || "-"}</td>
+<td data-label="CUTI SAMPAI">
+${item["CUTI SAMPAI"] || "-"}
+</td>
 
-        <td>${item["KETERANGAN"] || "-"}</td>
+<td data-label="KETERANGAN">
+${item["KETERANGAN"] || "-"}
+</td>
 
-        <td>${item["ALAMAT CUTI"] || "-"}</td>
+<td data-label="DIBUAT">
+${item["ALAMAT CUTI"] || "-"}
+</td>
 
-      </tr>
-    `;
+</tr>
+`;
 
   });
 
@@ -63,24 +77,38 @@ async function loadTransport(){
   data.forEach(item => {
 
     transportBody.innerHTML += `
-      <tr>
+<tr>
 
-        <td>${item["NO"] || "-"}</td>
+<td data-label="NO">
+${item["NO"] || "-"}
+</td>
 
-        <td>${item["NAMA"] || "-"}</td>
+<td data-label="NAMA">
+${item["NAMA"] || "-"}
+</td>
 
-        <td>${item["NO KARYAWAN"] || "-"}</td>
+<td data-label="NO KARYAWAN">
+${item["NO KARYAWAN"] || "-"}
+</td>
 
-        <td>${item["CUTI DARI"] || "-"}</td>
+<td data-label="CUTI DARI">
+${item["CUTI DARI"] || "-"}
+</td>
 
-        <td>${item["CUTI SAMPAI"] || "-"}</td>
+<td data-label="CUTI SAMPAI">
+${item["CUTI SAMPAI"] || "-"}
+</td>
 
-        <td>${item["KETERANGAN"] || "-"}</td>
+<td data-label="KETERANGAN">
+${item["KETERANGAN"] || "-"}
+</td>
 
-        <td>${item["ALAMAT CUTI"] || "-"}</td>
+<td data-label="DIBUAT">
+${item["ALAMAT CUTI"] || "-"}
+</td>
 
-      </tr>
-    `;
+</tr>
+`;
 
   });
 
