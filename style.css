@@ -47,3 +47,6 @@ th{
   font-size:12px;
   font-weight:bold;
 }
+.card{
+  overflow-x:auto;
+}
